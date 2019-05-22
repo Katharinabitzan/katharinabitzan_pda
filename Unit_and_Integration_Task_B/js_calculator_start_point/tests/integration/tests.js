@@ -40,13 +40,13 @@ it('should chain multiple operations together', function(){
   expect(running_total.getAttribute('value')).to.eventually.equal('6');
 });
 //
-// it('should provide expected output for a range of numbers: negative', function(){
-//   element(by.css('#number7')).click();
-//   element(by.css('#operator_subtract')).click();
-//   element(by.css('#number5')).click();
-//   element(by.css('#operator_equals')).click();
-//   expect(running_total.getAttribute('value')).to.eventually.equal('-2');
-// });
+it('should provide expected output for a range of numbers: negative', function(){
+  element(by.css('#number7')).click();
+  element(by.css('#operator_subtract')).click();
+  element(by.css('#number5')).click();
+  element(by.css('#operator_equals')).click();
+  expect(running_total.getAttribute('value')).to.eventually.equal('-2');
+});
 
 it('should provide expected output for a range of numbers: decimals', function(){
   element(by.css('#number5')).click();

@@ -66,7 +66,6 @@ describe('calculator', function () {
     assert.deepStrictEqual(expected, actual);
   });
 
-// NOT SURE ABOUT THIS
   it('should clear the running total without affecting the calculation', function() {
     calculator.runningTotal = 0;
     calculator.numberClick(5);
